@@ -1,6 +1,13 @@
 # assistantEVA
 EVA (Electronic Voice Assistant) is a voice-powered virtual assistant for your PC. The purpose is to handle tasks on behalf of users through voice commands, allowing them to concentrate on more demanding tasks at hand.
 
+# Installing dependencies
+1. Clone this repository
+
+2. Navigate to the cloned directory
+
+3. Run pip install -r requirements.txt (Python 2), or pip3 install -r requirements.txt (Python 3) to install the necessary dependencies
+
 # Configuring EVA
 Before you start using EVA, it is important to configure her according to your own personal settings. To do this, open the configuration INI file, which can be found in the folder at `assistantEVA\assistantEVA\config\config.ini`
 
@@ -28,7 +35,7 @@ If you have a Python IDE, EVA and be ran as a script which is found at `assistan
 # Functions that EVA can perform
 EVA is able to perform a variety of functions, which are executed based on key words detected in your speech. The functions that EVA can perform and the key words which are used to trigger them accordingly are as follows:
 
-##1: Send emails
+## 1: Send emails
 **Key word to execute: "send email" or "send email to XXX"**
 Ensure that you have set your email and password beforehand in the INI file. EVA stores all your contact names and emails in a CSV file, which is located in `assistantEVA\assistantEVA\resources\Email_contact.csv`. 
 
@@ -44,14 +51,14 @@ EVA can tell you the weather information for a specified city. To do this, say t
 and the minimum temperature is 26.00 degree celcius
 
 ## 3: Get current time for location
-**Key word to execute:  "current time in XXX"**
+**Key word to execute: "current time in XXX"**
 
 Example:
   **You:** current time in London
 ** Eva: **Current time in London is 15 hours 45 minutes
 
 ## 4a: Play song from your music folder
-**Key word to execute:  "play song" or "play song XXX"**
+**Key word to execute: "play song" or "play song XXX"**
 
 Ensure that you have set the path to where your music files are stored in the INI configuration file beforehand. Also, VLC is required to be installed on your PC as EVA uses VLC to play songs. To get EVA to play a song, say to EVA "play song" or "play song XXX", where XXX is the title of the song.
 
@@ -77,11 +84,11 @@ EVA will execute a google search for the subject XXX as specified
 EVA will prompt you for the destination and origin. After that, a Google Maps webpage will open up showing you the possible routes that can be taken
 
 ### 7c: YouTube search
-**Key word to execute:"youtube search" or "youtube search for XXX"**
+**Key word to execute: "youtube search" or "youtube search for XXX"**
 EVA will search YouTube for the subject XXX as specified
 
 ### 7d: Click on XXX
-**Key word to execute:"click on XXX"**
+**Key word to execute: "click on XXX"**
 EVA will scour the webpage for a clickable element that has "XXX" in its text string. If found, it will automatically click on it for the user.
 
 ### 7e: Open new tab/close tab
