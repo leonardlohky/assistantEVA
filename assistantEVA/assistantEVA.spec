@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['assistantEVA.py'],
-             pathex=['C:\\Users\\7590\\spyder-workspace\\voice_assistant\\assistantEVA'],
+             pathex=['C:\\Users\\7590\\spyder-workspace\\assistantEVA\\assistantEVA'],
              binaries=[('C:\Program Files\VideoLAN\VLC\plugins', 'plugins')],
              datas=[('./VLC/libvlc.dll', '.'), ('./VLC/axvlc.dll', '.'), ('./VLC/libvlccore.dll', '.'), ('./VLC/npvlc.dll', '.')],
              hiddenimports=[('pkg_resources.py2_warn'),('pyttsx3.drivers'),('pyttsx3.drivers.sapi5')],

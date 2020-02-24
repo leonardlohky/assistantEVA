@@ -9,7 +9,7 @@ class consoleEVA:
         pass
     
     def console_output(self, text):
-        if self.logLineCount > 6:
+        if self.logLineCount > 10:
             self.logLineCount = 1
             self.logHistory = []
         

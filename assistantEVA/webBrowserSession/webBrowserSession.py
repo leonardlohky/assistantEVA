@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
 from time import sleep
 import os
+from webdriver_manager.chrome import ChromeDriverManager
 
 # Dictionary to convert str to int for switching tabs
 nth = {
@@ -25,7 +26,7 @@ nth = {
 class webBrowserSession():
     
     def __init__(self):
-        self.driver = webdriver.Chrome('C:/Users/7590/.wdm/drivers/chromedriver/79.0.3945.36/win32/chromedriver.exe')
+        self.driver = webdriver.Chrome(ChromeDriverManager().install())
         self.driver.get("http://www.google.com")
         self.driver.maximize_window()
         self.tabCount = 1

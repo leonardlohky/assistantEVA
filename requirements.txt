@@ -1,0 +1,11 @@
+python_vlc==3.0.7110
+pyowm==2.10.0
+selenium==3.141.0
+webdriver_manager==2.3.0
+SpeechRecognition==3.8.1
+pytz==2019.3
+requests==2.22.0
+pyttsx3==2.81
+geocoder==1.38.1
+pynput==1.6.6
+beautifulsoup4==4.8.2
