@@ -1,0 +1,8 @@
+Dear ${RECIPIENT}, 
+
+${EMAIL_BODY}
+
+Warm regards,
+Leonard Loh Kin Yung
+
+This message was sent by my personal voice assistant "Eva"
