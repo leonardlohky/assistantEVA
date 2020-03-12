@@ -2,6 +2,7 @@
 
 # https://towardsdatascience.com/build-your-first-voice-assistant-85a5a49f6cc1
 
+from src.ChatEVA import ChatEVA
 from webBrowserSession import webBrowserSession
 from string import Template
 from pynput.keyboard import KeyCode, Controller, Key
@@ -410,9 +411,13 @@ def assistant(command):
         global sleep_mode
         sleep_mode = True
         assistantResponse('Going into sleep mode. Call me if you need something')
-        
+    
+    # ------------------------------------------------------------------
+    # Function 11: Generic Chat Response
+    # ------------------------------------------------------------------
     else:
-        assistantResponse('Sorry. I did not get that')
+        res = ChatEVA.chatbot_response(command)
+        assistantResponse(res)
         
 
 if __name__ == '__main__':
